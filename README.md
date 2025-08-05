@@ -9,19 +9,6 @@ ThinkBoard is a full-stack note-taking application built with the MERN stack (Mo
 - Environment variable support with dotenv
 - Tailwind CSS for styling (frontend)
 
-## Project Structure
-```
-backend/
-  src/
-    server.js
-    controllers/
-    routes/
-frontend/
-  src/
-    App.jsx
-    pages/
-```
-
 ## Getting Started
 
 ### Prerequisites
@@ -41,7 +28,9 @@ frontend/
 3. Create a `.env` file in the backend root with your MongoDB URI and any other environment variables:
    ```env
    MONGO_URI=your_mongodb_connection_string
-   PORT=5001
+   PORT=your_port_number
+   UPSTASH_REDIS_REST_URL=<your_redis_rest_url>
+   UPSTASH_REDIS_REST_TOKEN=<your_redis_rest_token>
    ```
 4. Start the backend server:
    ```sh
@@ -61,15 +50,6 @@ frontend/
    ```sh
    npm start
    ```
-
-### Tailwind CSS
-Make sure your `tailwind.config.js` content array includes all relevant source files, e.g.:
-```js
-content: [
-  "./src/**/*.{js,jsx,ts,tsx}",
-  "./public/index.html"
-],
-```
 
 ## .gitignore
 Sensitive files like `.env` and `node_modules` are already ignored by default.
