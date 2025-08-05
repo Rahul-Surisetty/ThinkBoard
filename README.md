@@ -31,6 +31,7 @@ ThinkBoard is a full-stack note-taking application built with the MERN stack (Mo
    PORT=your_port_number
    UPSTASH_REDIS_REST_URL=<your_redis_rest_url>
    UPSTASH_REDIS_REST_TOKEN=<your_redis_rest_token>
+   NODE_ENV=development
    ```
 4. Start the backend server:
    ```sh
